@@ -9,3 +9,5 @@ In the URL:
 - localhost means the broker is running on the same computer
 - 5672 is the default AMQP port used by RabbitMQ
 Using the same connection URL allows the publisher to send messages and the subscriber to receive those messages through the same broker.
+
+![alt text](<Running RabbitMQ .png>)
