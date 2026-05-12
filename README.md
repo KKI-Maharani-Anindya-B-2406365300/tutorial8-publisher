@@ -11,3 +11,7 @@ In the URL:
 Using the same connection URL allows the publisher to send messages and the subscriber to receive those messages through the same broker.
 
 ![alt text](<Running RabbitMQ .png>)
+
+![alt text](sending-processing-event.png)
+The screenshot above shows both the publisher and subscriber programs running successfully. When I run the publisher using cargo run, the program sends five event messages to the RabbitMQ message broker.
+At the same time, the subscriber listens to the broker and receives those messages from the user_created queue. The subscriber then processes each event and displays the user_id and user_name data in the terminal output. This shows that the communication between the publisher, RabbitMQ, and subscriber is working properly.
